@@ -1,7 +1,8 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 function HomePage() {
-  return <h1>Christmas List</h1>;
+  return <Layout />;
 }
 
 export default HomePage;
