@@ -1,7 +1,8 @@
 import React from 'react';
 import { InputGroup, Input, Button, InputRightElement } from '@chakra-ui/core';
 
-const SantaInput = () => {
+//TODO: this will be the individual component that is used to add the new participants to the list
+function SantaInput() {
   const [show, setShow] = React.useState(false);
   const handleClick = () => setShow(!show);
 
@@ -15,6 +16,6 @@ const SantaInput = () => {
       </InputRightElement>
     </InputGroup>
   );
-};
+}
 
 export default SantaInput;
