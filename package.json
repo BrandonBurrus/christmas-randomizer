@@ -6,5 +6,32 @@
     "Brandon Burrus <brandon@burrus.io>",
     "Juan Palomino"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
+    "framer": "^1.2.7",
+    "next": "^9.5.3",
+    "ramda": "^0.27.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@types/ramda": "^0.27.19",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.12.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  }
 }
