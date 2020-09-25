@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "eslint ./src --ext .ts,.tsx",
     "lint:fix": "eslint ./src --fix --ext .ts,.tsx",
@@ -41,6 +41,7 @@
     "emotion-theming": "^10.0.27",
     "framer": "^1.2.7",
     "next": "^9.5.3",
+    "next-offline": "^5.0.2",
     "prop-types": "^15.7.2",
     "ramda": "^0.27.1",
     "react": "^16.13.1",
@@ -74,6 +75,7 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2"
   }
 }
