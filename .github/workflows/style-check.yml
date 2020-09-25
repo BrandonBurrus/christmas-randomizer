@@ -1,0 +1,24 @@
+name: Code Style
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check-style:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v2
+      - name: Install Packages
+        run: yarn install --frozen-lockfile
+      - name: Run ESLint
+        run: yarn eslint
+      - name: Run Prettier
+        run: yarn prettier
+      - name: Run TypeScript Compiler
+        run: yarn typecheck

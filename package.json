@@ -15,7 +15,8 @@
     "lint:fix": "eslint ./src --fix --ext .ts,.tsx",
     "lint:staged": "lint-staged --quiet",
     "prettier": "prettier --list-different ./src",
-    "prettier:fix": "prettier --write --config ./.prettierrc ./src"
+    "prettier:fix": "prettier --write --config ./.prettierrc ./src",
+    "typecheck": "tsc --noEmit"
   },
   "husky": {
     "hooks": {
