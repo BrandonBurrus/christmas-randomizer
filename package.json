@@ -1,0 +1,10 @@
+{
+  "name": "christmas-randomizer",
+  "version": "0.1.0",
+  "repository": "https://github.com/BrandonBurrus/christmas-randomizer.git",
+  "contributors": [
+    "Brandon Burrus <brandon@burrus.io>",
+    "Juan Palomino"
+  ],
+  "license": "MIT"
+}
