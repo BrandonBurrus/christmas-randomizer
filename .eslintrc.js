@@ -637,8 +637,8 @@ module.exports = {
 
     /* React Performance rules */
     // https://github.com/cvazac/eslint-plugin-react-perf#list-of-supported-rules
-    'react-perf/jsx-no-new-object-as-prop': 'warn', // Avoid using object literals passed as JSX props
-    'react-perf/jsx-no-new-array-as-prop': 'warn', // Avoid using array literals passed as JSX props
+    'react-perf/jsx-no-new-object-as-prop': 'off', // Avoid using object literals passed as JSX props
+    'react-perf/jsx-no-new-array-as-prop': 'off', // Avoid using array literals passed as JSX props
     'react-perf/jsx-no-new-function-as-prop': 'off', // Avoid using function literals passed as JSX props
     'react-perf/jsx-no-jsx-as-prop': 'off', // Avoid passing JSX passed as JSX props
   },

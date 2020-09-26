@@ -1,10 +1,14 @@
 import React from 'react';
-import { Box } from '@chakra-ui/core';
+import { Box, Heading, BoxProps } from '@chakra-ui/core';
+import { COPY } from '../app/config';
 
-function Header() {
+/**
+ * App header
+ */
+function Header(props: BoxProps) {
   return (
-    <Box border='1px solid red'>
-      <h1>Secret Santa List</h1>
+    <Box {...props} borderRadius='2rem' py='1rem' px='2rem' bg='white'>
+      <Heading>{COPY.TITLE}</Heading>
     </Box>
   );
 }
