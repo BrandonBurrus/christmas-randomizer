@@ -231,7 +231,7 @@ module.exports = {
     'max-statements-per-line': ['warn', { max: 3 }], // Maximum number of statements allowed per line
     'multiline-comment-style': 'off', // Prettier
     'multiline-ternary': 'off', // Prettier
-    'new-cap': 'warn', // Constructors are capitalized
+    'new-cap': 'off', // Constructors are capitalized
     'new-parens': ['error', 'always'], // Require object instantiation constructors to have parens `new Config()`
     'newline-per-chained-call': 'off', // Prettier
     'no-array-constructor': 'error', // No using `new Array()`
@@ -386,7 +386,7 @@ module.exports = {
     '@typescript-eslint/triple-slash-reference': 'off', // Avoid usage of deprecate typescript triple slash directives
     '@typescript-eslint/type-annotation-spacing': 'off', // Prettier
     '@typescript-eslint/typedef': 'off', // No using inferred typing
-    '@typescript-eslint/unbound-method': 'warn', // Avoid using methods outside of method call
+    '@typescript-eslint/unbound-method': 'off', // Avoid using methods outside of method call
     '@typescript-eslint/unified-signatures': 'warn', // Prefer union types instead of method overloading
 
     /* Import rules */

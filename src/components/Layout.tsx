@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import Header from './Header';
+// import Header from './Header';
 import { Flex, Box, Stack } from '@chakra-ui/core';
 import Footer from './Footer';
 
@@ -14,7 +14,7 @@ function Layout(props: LayoutProps) {
   const { children } = props;
 
   return (
-    <Box w='100vw' h='100vh' overflow='scroll' bg='green.300'>
+    <Box w='100vw' h='100vh' overflow='scroll' bg='gray.200'>
       <Stack
         w={['100%', '100%', '100%', '60rem']}
         minH='calc(100% - 4rem)'
@@ -23,8 +23,7 @@ function Layout(props: LayoutProps) {
         my='2rem'
         px='2rem'
       >
-        <Header />
-        <Flex as='main' flexGrow={1} mt='1rem' px='2rem' py='1.5rem' borderRadius='2rem' bg='white'>
+        <Flex as='main' bg='white' borderRadius='2rem' flexGrow={1} px='2rem' py='1.5rem'>
           {children}
         </Flex>
         <Footer mt='1rem' />

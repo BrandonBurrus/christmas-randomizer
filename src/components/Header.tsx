@@ -8,7 +8,7 @@ import { COPY } from '../app/config';
 function Header(props: BoxProps) {
   return (
     <Box {...props} borderRadius='2rem' py='1rem' px='2rem' bg='white'>
-      <Heading>{COPY.TITLE}</Heading>
+      <Heading color='green.400'>{COPY.TITLE}</Heading>
     </Box>
   );
 }
