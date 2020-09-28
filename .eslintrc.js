@@ -231,7 +231,7 @@ module.exports = {
     'max-statements-per-line': ['warn', { max: 3 }], // Maximum number of statements allowed per line
     'multiline-comment-style': 'off', // Prettier
     'multiline-ternary': 'off', // Prettier
-    'new-cap': 'warn', // Constructors are capitalized
+    'new-cap': 'off', // Constructors are capitalized
     'new-parens': ['error', 'always'], // Require object instantiation constructors to have parens `new Config()`
     'newline-per-chained-call': 'off', // Prettier
     'no-array-constructor': 'error', // No using `new Array()`
@@ -386,7 +386,7 @@ module.exports = {
     '@typescript-eslint/triple-slash-reference': 'off', // Avoid usage of deprecate typescript triple slash directives
     '@typescript-eslint/type-annotation-spacing': 'off', // Prettier
     '@typescript-eslint/typedef': 'off', // No using inferred typing
-    '@typescript-eslint/unbound-method': 'warn', // Avoid using methods outside of method call
+    '@typescript-eslint/unbound-method': 'off', // Avoid using methods outside of method call
     '@typescript-eslint/unified-signatures': 'warn', // Prefer union types instead of method overloading
 
     /* Import rules */
@@ -637,8 +637,8 @@ module.exports = {
 
     /* React Performance rules */
     // https://github.com/cvazac/eslint-plugin-react-perf#list-of-supported-rules
-    'react-perf/jsx-no-new-object-as-prop': 'warn', // Avoid using object literals passed as JSX props
-    'react-perf/jsx-no-new-array-as-prop': 'warn', // Avoid using array literals passed as JSX props
+    'react-perf/jsx-no-new-object-as-prop': 'off', // Avoid using object literals passed as JSX props
+    'react-perf/jsx-no-new-array-as-prop': 'off', // Avoid using array literals passed as JSX props
     'react-perf/jsx-no-new-function-as-prop': 'off', // Avoid using function literals passed as JSX props
     'react-perf/jsx-no-jsx-as-prop': 'off', // Avoid passing JSX passed as JSX props
   },

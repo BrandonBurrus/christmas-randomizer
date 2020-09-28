@@ -1,24 +1,35 @@
-import React from 'react';
-import Header from './Header';
-import SantaInput from './SantaInput';
-import { Flex, Text, Box } from '@chakra-ui/core';
+import React, { ReactNode } from 'react';
+// import Header from './Header';
+import { Flex, Box, Stack } from '@chakra-ui/core';
+import Footer from './Footer';
 
-const Layout = () => {
-  return (
-    <Flex height='100vh' align='center' direction='column' bg='green.600'>
-      <Flex bg='green.50' align='flex-end'>
-        <Header />
-      </Flex>
-      <Flex bg='blue.50' size='150px' align='center' justify='center'>
-        {/* <SantaInput /> */}
-      </Flex>
-      <Box bg='red.50' width='33%' alignContent='center'>
-        <Text bg='red' color='white'>
-          Box 3
-        </Text>
-      </Box>
-    </Flex>
-  );
+type LayoutProps = {
+  children?: ReactNode;
 };
+
+/**
+ * Main app page layout
+ */
+function Layout(props: LayoutProps) {
+  const { children } = props;
+
+  return (
+    <Box w='100vw' h='100vh' overflow='scroll' bg='gray.200'>
+      <Stack
+        w={['100%', '100%', '100%', '60rem']}
+        minH='calc(100% - 4rem)'
+        minW='24rem'
+        mx='auto'
+        my='2rem'
+        px='2rem'
+      >
+        <Flex as='main' bg='white' borderRadius='2rem' flexGrow={1} px='2rem' py='1.5rem'>
+          {children}
+        </Flex>
+        <Footer mt='1rem' />
+      </Stack>
+    </Box>
+  );
+}
 
 export default Layout;
