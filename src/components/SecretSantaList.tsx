@@ -1,16 +1,16 @@
 import React, { FormEvent, useState } from 'react';
-import { Box, Button, Flex, Input, Stack, Text } from '@chakra-ui/core';
+import { Box, Button, Flex, Input, PseudoBox, Stack, Text } from '@chakra-ui/core';
 import { COPY } from 'app/config';
 import useSecretSanta from '../hooks/useSecretSanta';
 import { isEmpty } from 'ramda';
 import { DragDropContext, Draggable, Droppable, DropResult } from 'react-beautiful-dnd';
-// import { CgTrash as TrashIcon } from 'react-icons/cg';
+import { CgTrash as TrashIcon } from 'react-icons/cg';
 
 /**
  * TODO: Add documentation
  */
 function SecretSantaList() {
-  const [secretSanta, { addName, moveName }] = useSecretSanta();
+  const [secretSanta, { addName, moveName, removeName }] = useSecretSanta();
   const [newName, setNewName] = useState('');
 
   const addNewName = (e: FormEvent<HTMLFormElement>) => {
@@ -59,7 +59,17 @@ function SecretSantaList() {
                             {...drag.draggableProps}
                             {...drag.dragHandleProps}
                           >
-                            <Text fontSize='xl'>{name.name}</Text>
+                            <Flex align='center' justify='space-between'>
+                              <Text fontSize='xl'>{name.name}</Text>
+                              <PseudoBox
+                                _hover={{ cursor: 'pointer' }}
+                                onClick={() => {
+                                  removeName(name.id);
+                                }}
+                              >
+                                <TrashIcon />
+                              </PseudoBox>
+                            </Flex>
                           </Box>
                         )}
                       </Draggable>
